@@ -465,7 +465,7 @@ SELECT 'customers' AS category, COUNT(*) AS total FROM customers
 UNION
 SELECT 'employees' AS category, COUNT(*) AS total FROM employees
 UNION
-SELECT 'customer_employee_overlap' AS category, COUNT(*) AS total FROM customers 
+SELECT 'customer_employer_overlap' AS category, COUNT(*) AS total FROM customers 
 JOIN employees ON customers.uname = employees.uname
 UNION
 SELECT 'drone_pilots' AS category, COUNT(*) AS total FROM drone_pilots
